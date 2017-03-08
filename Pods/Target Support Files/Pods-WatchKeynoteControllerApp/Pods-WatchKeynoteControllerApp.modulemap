@@ -1,0 +1,6 @@
+framework module Pods_WatchKeynoteControllerApp {
+  umbrella header "Pods-WatchKeynoteControllerApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
