@@ -1,3 +1,4 @@
+<img src="https://raw.githubusercontent.com/ezefranca/WatchNote/master/WatchKeynoteController/Assets.xcassets/AppIcon.appiconset/1024.png" width="80" height="80" />
 # WatchNote
 ⌚️ 🤓 Controlling yours Keynote Slides using Apple Watch
 
