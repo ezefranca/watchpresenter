@@ -7,17 +7,116 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A7920E262F0FE5F2C76EF02 /* Pods_WatchKeynoteControllerWatchApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 525E6A81789C0BCE85C0E8DA /* Pods_WatchKeynoteControllerWatchApp.framework */; };
 		8BBD93181E6E3E11009DCF65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBD93171E6E3E11009DCF65 /* AppDelegate.swift */; };
 		8BBD931A1E6E3E11009DCF65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BBD93191E6E3E11009DCF65 /* Assets.xcassets */; };
 		8BBD931D1E6E3E11009DCF65 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BBD931B1E6E3E11009DCF65 /* MainMenu.xib */; };
+		8BBD932B1E6E3EF6009DCF65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBD932A1E6E3EF6009DCF65 /* AppDelegate.swift */; };
+		8BBD932D1E6E3EF6009DCF65 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBD932C1E6E3EF6009DCF65 /* ViewController.swift */; };
+		8BBD93301E6E3EF6009DCF65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BBD932E1E6E3EF6009DCF65 /* Main.storyboard */; };
+		8BBD93321E6E3EF6009DCF65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BBD93311E6E3EF6009DCF65 /* Assets.xcassets */; };
+		8BBD93351E6E3EF6009DCF65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BBD93331E6E3EF6009DCF65 /* LaunchScreen.storyboard */; };
+		8BBD93401E6E3F19009DCF65 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BBD933E1E6E3F19009DCF65 /* Interface.storyboard */; };
+		8BBD93421E6E3F19009DCF65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BBD93411E6E3F19009DCF65 /* Assets.xcassets */; };
+		8BBD93491E6E3F19009DCF65 /* WatchKeynoteControllerWatchApp Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8BBD93481E6E3F19009DCF65 /* WatchKeynoteControllerWatchApp Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8BBD93501E6E3F19009DCF65 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBD934F1E6E3F19009DCF65 /* InterfaceController.swift */; };
+		8BBD93521E6E3F1A009DCF65 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBD93511E6E3F1A009DCF65 /* ExtensionDelegate.swift */; };
+		8BBD93541E6E3F1A009DCF65 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBD93531E6E3F1A009DCF65 /* NotificationController.swift */; };
+		8BBD93561E6E3F1A009DCF65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BBD93551E6E3F1A009DCF65 /* Assets.xcassets */; };
+		8BBD935A1E6E3F1A009DCF65 /* WatchKeynoteControllerWatchApp.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8BBD933C1E6E3F19009DCF65 /* WatchKeynoteControllerWatchApp.app */; };
+		8BBD93691E6E5B18009DCF65 /* KeySender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBD93671E6E5B18009DCF65 /* KeySender.swift */; };
+		8BBD936A1E6E5B18009DCF65 /* KeySenderRecivingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBD93681E6E5B18009DCF65 /* KeySenderRecivingService.swift */; };
+		8BBD936C1E6E77BB009DCF65 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BBD936B1E6E77BB009DCF65 /* WatchConnectivity.framework */; };
+		A93BE0F1BE1EBF494256DDF6 /* Pods_WatchKeynoteControllerApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 586005816B27873808E2BECE /* Pods_WatchKeynoteControllerApp.framework */; };
+		AD17BE139DD443325BC1ECED /* Pods_WatchKeynoteControllerWatchApp_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE77100BA686D27F22C30018 /* Pods_WatchKeynoteControllerWatchApp_Extension.framework */; };
+		D6F220821BFCB9A02369112B /* Pods_WatchKeynoteController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF3088FD8031B53750892BBC /* Pods_WatchKeynoteController.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		8BBD934A1E6E3F19009DCF65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BBD930C1E6E3E11009DCF65 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8BBD93471E6E3F19009DCF65;
+			remoteInfo = "WatchKeynoteControllerWatchApp Extension";
+		};
+		8BBD93581E6E3F1A009DCF65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BBD930C1E6E3E11009DCF65 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8BBD933B1E6E3F19009DCF65;
+			remoteInfo = WatchKeynoteControllerWatchApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8BBD935E1E6E3F1A009DCF65 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8BBD93491E6E3F19009DCF65 /* WatchKeynoteControllerWatchApp Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BBD93621E6E3F1A009DCF65 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				8BBD935A1E6E3F1A009DCF65 /* WatchKeynoteControllerWatchApp.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		05E4E7D26E834CFE0D8218C8 /* Pods-WatchKeynoteControllerWatchApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchKeynoteControllerWatchApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WatchKeynoteControllerWatchApp/Pods-WatchKeynoteControllerWatchApp.debug.xcconfig"; sourceTree = "<group>"; };
+		16F1E0B851659DE7EFD8B362 /* Pods-WatchKeynoteControllerApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchKeynoteControllerApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WatchKeynoteControllerApp/Pods-WatchKeynoteControllerApp.debug.xcconfig"; sourceTree = "<group>"; };
+		525E6A81789C0BCE85C0E8DA /* Pods_WatchKeynoteControllerWatchApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatchKeynoteControllerWatchApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		586005816B27873808E2BECE /* Pods_WatchKeynoteControllerApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatchKeynoteControllerApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A03E7C1A3A4F1D4C33589BF /* Pods-WatchKeynoteControllerWatchApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchKeynoteControllerWatchApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-WatchKeynoteControllerWatchApp/Pods-WatchKeynoteControllerWatchApp.release.xcconfig"; sourceTree = "<group>"; };
 		8BBD93141E6E3E11009DCF65 /* WatchKeynoteController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchKeynoteController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BBD93171E6E3E11009DCF65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BBD93191E6E3E11009DCF65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BBD931C1E6E3E11009DCF65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		8BBD931E1E6E3E11009DCF65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BBD93281E6E3EF6009DCF65 /* WatchKeynoteControllerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchKeynoteControllerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BBD932A1E6E3EF6009DCF65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8BBD932C1E6E3EF6009DCF65 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8BBD932F1E6E3EF6009DCF65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8BBD93311E6E3EF6009DCF65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8BBD93341E6E3EF6009DCF65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8BBD93361E6E3EF6009DCF65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BBD933C1E6E3F19009DCF65 /* WatchKeynoteControllerWatchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchKeynoteControllerWatchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BBD933F1E6E3F19009DCF65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		8BBD93411E6E3F19009DCF65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8BBD93431E6E3F19009DCF65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BBD93481E6E3F19009DCF65 /* WatchKeynoteControllerWatchApp Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchKeynoteControllerWatchApp Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BBD934E1E6E3F19009DCF65 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		8BBD934F1E6E3F19009DCF65 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		8BBD93511E6E3F1A009DCF65 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		8BBD93531E6E3F1A009DCF65 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		8BBD93551E6E3F1A009DCF65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8BBD93571E6E3F1A009DCF65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BBD93631E6E4023009DCF65 /* WatchKeynoteController.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WatchKeynoteController.entitlements; sourceTree = "<group>"; };
+		8BBD93641E6E4547009DCF65 /* WatchKeynoteControllerApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WatchKeynoteControllerApp.entitlements; sourceTree = "<group>"; };
+		8BBD93651E6E4574009DCF65 /* WatchKeynoteControllerWatchApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WatchKeynoteControllerWatchApp.entitlements; sourceTree = "<group>"; };
+		8BBD93661E6E457C009DCF65 /* WatchKeynoteControllerWatchApp Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WatchKeynoteControllerWatchApp Extension.entitlements"; sourceTree = "<group>"; };
+		8BBD93671E6E5B18009DCF65 /* KeySender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeySender.swift; sourceTree = "<group>"; };
+		8BBD93681E6E5B18009DCF65 /* KeySenderRecivingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeySenderRecivingService.swift; sourceTree = "<group>"; };
+		8BBD936B1E6E77BB009DCF65 /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.2.sdk/System/Library/Frameworks/WatchConnectivity.framework; sourceTree = DEVELOPER_DIR; };
+		9AEF0FDC6D35C03A777E529C /* Pods-WatchKeynoteControllerWatchApp Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchKeynoteControllerWatchApp Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WatchKeynoteControllerWatchApp Extension/Pods-WatchKeynoteControllerWatchApp Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		9E5DF31EAABA495D8C5E58B7 /* Pods-WatchKeynoteControllerApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchKeynoteControllerApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-WatchKeynoteControllerApp/Pods-WatchKeynoteControllerApp.release.xcconfig"; sourceTree = "<group>"; };
+		A22EB583BF3DF3A3CD688107 /* Pods-WatchKeynoteController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchKeynoteController.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WatchKeynoteController/Pods-WatchKeynoteController.debug.xcconfig"; sourceTree = "<group>"; };
+		B0B9B66FA496D3B31426FAF1 /* Pods-WatchKeynoteController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchKeynoteController.release.xcconfig"; path = "Pods/Target Support Files/Pods-WatchKeynoteController/Pods-WatchKeynoteController.release.xcconfig"; sourceTree = "<group>"; };
+		BF3088FD8031B53750892BBC /* Pods_WatchKeynoteController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatchKeynoteController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF5C6271B60FD1F2BF9A7176 /* Pods-WatchKeynoteControllerWatchApp Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchKeynoteControllerWatchApp Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-WatchKeynoteControllerWatchApp Extension/Pods-WatchKeynoteControllerWatchApp Extension.release.xcconfig"; sourceTree = "<group>"; };
+		CE77100BA686D27F22C30018 /* Pods_WatchKeynoteControllerWatchApp_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatchKeynoteControllerWatchApp_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -25,17 +124,60 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6F220821BFCB9A02369112B /* Pods_WatchKeynoteController.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BBD93251E6E3EF6009DCF65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BBD936C1E6E77BB009DCF65 /* WatchConnectivity.framework in Frameworks */,
+				A93BE0F1BE1EBF494256DDF6 /* Pods_WatchKeynoteControllerApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BBD93451E6E3F19009DCF65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD17BE139DD443325BC1ECED /* Pods_WatchKeynoteControllerWatchApp_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CADCE4755BCDD297B53668D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A7920E262F0FE5F2C76EF02 /* Pods_WatchKeynoteControllerWatchApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7D4D9B97D1C2C60BDA3AEA80 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8BBD936B1E6E77BB009DCF65 /* WatchConnectivity.framework */,
+				BF3088FD8031B53750892BBC /* Pods_WatchKeynoteController.framework */,
+				586005816B27873808E2BECE /* Pods_WatchKeynoteControllerApp.framework */,
+				525E6A81789C0BCE85C0E8DA /* Pods_WatchKeynoteControllerWatchApp.framework */,
+				CE77100BA686D27F22C30018 /* Pods_WatchKeynoteControllerWatchApp_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8BBD930B1E6E3E11009DCF65 = {
 			isa = PBXGroup;
 			children = (
 				8BBD93161E6E3E11009DCF65 /* WatchKeynoteController */,
+				8BBD93291E6E3EF6009DCF65 /* WatchKeynoteControllerApp */,
+				8BBD933D1E6E3F19009DCF65 /* WatchKeynoteControllerWatchApp */,
+				8BBD934C1E6E3F19009DCF65 /* WatchKeynoteControllerWatchApp Extension */,
 				8BBD93151E6E3E11009DCF65 /* Products */,
+				BFA2A41EFD9821FD37808728 /* Pods */,
+				7D4D9B97D1C2C60BDA3AEA80 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -43,6 +185,9 @@
 			isa = PBXGroup;
 			children = (
 				8BBD93141E6E3E11009DCF65 /* WatchKeynoteController.app */,
+				8BBD93281E6E3EF6009DCF65 /* WatchKeynoteControllerApp.app */,
+				8BBD933C1E6E3F19009DCF65 /* WatchKeynoteControllerWatchApp.app */,
+				8BBD93481E6E3F19009DCF65 /* WatchKeynoteControllerWatchApp Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -50,12 +195,77 @@
 		8BBD93161E6E3E11009DCF65 /* WatchKeynoteController */ = {
 			isa = PBXGroup;
 			children = (
+				8BBD93631E6E4023009DCF65 /* WatchKeynoteController.entitlements */,
 				8BBD93171E6E3E11009DCF65 /* AppDelegate.swift */,
+				8BBD93671E6E5B18009DCF65 /* KeySender.swift */,
+				8BBD93681E6E5B18009DCF65 /* KeySenderRecivingService.swift */,
 				8BBD93191E6E3E11009DCF65 /* Assets.xcassets */,
 				8BBD931B1E6E3E11009DCF65 /* MainMenu.xib */,
 				8BBD931E1E6E3E11009DCF65 /* Info.plist */,
 			);
 			path = WatchKeynoteController;
+			sourceTree = "<group>";
+		};
+		8BBD93291E6E3EF6009DCF65 /* WatchKeynoteControllerApp */ = {
+			isa = PBXGroup;
+			children = (
+				8BBD93641E6E4547009DCF65 /* WatchKeynoteControllerApp.entitlements */,
+				8BBD932A1E6E3EF6009DCF65 /* AppDelegate.swift */,
+				8BBD932C1E6E3EF6009DCF65 /* ViewController.swift */,
+				8BBD932E1E6E3EF6009DCF65 /* Main.storyboard */,
+				8BBD93311E6E3EF6009DCF65 /* Assets.xcassets */,
+				8BBD93331E6E3EF6009DCF65 /* LaunchScreen.storyboard */,
+				8BBD93361E6E3EF6009DCF65 /* Info.plist */,
+			);
+			path = WatchKeynoteControllerApp;
+			sourceTree = "<group>";
+		};
+		8BBD933D1E6E3F19009DCF65 /* WatchKeynoteControllerWatchApp */ = {
+			isa = PBXGroup;
+			children = (
+				8BBD93651E6E4574009DCF65 /* WatchKeynoteControllerWatchApp.entitlements */,
+				8BBD933E1E6E3F19009DCF65 /* Interface.storyboard */,
+				8BBD93411E6E3F19009DCF65 /* Assets.xcassets */,
+				8BBD93431E6E3F19009DCF65 /* Info.plist */,
+			);
+			path = WatchKeynoteControllerWatchApp;
+			sourceTree = "<group>";
+		};
+		8BBD934C1E6E3F19009DCF65 /* WatchKeynoteControllerWatchApp Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8BBD93661E6E457C009DCF65 /* WatchKeynoteControllerWatchApp Extension.entitlements */,
+				8BBD934F1E6E3F19009DCF65 /* InterfaceController.swift */,
+				8BBD93511E6E3F1A009DCF65 /* ExtensionDelegate.swift */,
+				8BBD93531E6E3F1A009DCF65 /* NotificationController.swift */,
+				8BBD93551E6E3F1A009DCF65 /* Assets.xcassets */,
+				8BBD93571E6E3F1A009DCF65 /* Info.plist */,
+				8BBD934D1E6E3F19009DCF65 /* Supporting Files */,
+			);
+			path = "WatchKeynoteControllerWatchApp Extension";
+			sourceTree = "<group>";
+		};
+		8BBD934D1E6E3F19009DCF65 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8BBD934E1E6E3F19009DCF65 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BFA2A41EFD9821FD37808728 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A22EB583BF3DF3A3CD688107 /* Pods-WatchKeynoteController.debug.xcconfig */,
+				B0B9B66FA496D3B31426FAF1 /* Pods-WatchKeynoteController.release.xcconfig */,
+				16F1E0B851659DE7EFD8B362 /* Pods-WatchKeynoteControllerApp.debug.xcconfig */,
+				9E5DF31EAABA495D8C5E58B7 /* Pods-WatchKeynoteControllerApp.release.xcconfig */,
+				05E4E7D26E834CFE0D8218C8 /* Pods-WatchKeynoteControllerWatchApp.debug.xcconfig */,
+				7A03E7C1A3A4F1D4C33589BF /* Pods-WatchKeynoteControllerWatchApp.release.xcconfig */,
+				9AEF0FDC6D35C03A777E529C /* Pods-WatchKeynoteControllerWatchApp Extension.debug.xcconfig */,
+				BF5C6271B60FD1F2BF9A7176 /* Pods-WatchKeynoteControllerWatchApp Extension.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -65,9 +275,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8BBD93211E6E3E11009DCF65 /* Build configuration list for PBXNativeTarget "WatchKeynoteController" */;
 			buildPhases = (
+				CDE7FCD02EB46CC520A5FB6F /* [CP] Check Pods Manifest.lock */,
 				8BBD93101E6E3E11009DCF65 /* Sources */,
 				8BBD93111E6E3E11009DCF65 /* Frameworks */,
 				8BBD93121E6E3E11009DCF65 /* Resources */,
+				E62963732128267029CE6F78 /* [CP] Embed Pods Frameworks */,
+				1DF71E75F8AE0FBFE49F4A4A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -77,6 +290,68 @@
 			productName = WatchKeynoteController;
 			productReference = 8BBD93141E6E3E11009DCF65 /* WatchKeynoteController.app */;
 			productType = "com.apple.product-type.application";
+		};
+		8BBD93271E6E3EF6009DCF65 /* WatchKeynoteControllerApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BBD93371E6E3EF6009DCF65 /* Build configuration list for PBXNativeTarget "WatchKeynoteControllerApp" */;
+			buildPhases = (
+				00E3638D791A5A9B62D008A6 /* [CP] Check Pods Manifest.lock */,
+				8BBD93241E6E3EF6009DCF65 /* Sources */,
+				8BBD93251E6E3EF6009DCF65 /* Frameworks */,
+				8BBD93261E6E3EF6009DCF65 /* Resources */,
+				8BBD93621E6E3F1A009DCF65 /* Embed Watch Content */,
+				05C6CC1E360A9C93E98C55A7 /* [CP] Embed Pods Frameworks */,
+				F724639713764AF9A232973F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8BBD93591E6E3F1A009DCF65 /* PBXTargetDependency */,
+			);
+			name = WatchKeynoteControllerApp;
+			productName = WatchKeynoteControllerApp;
+			productReference = 8BBD93281E6E3EF6009DCF65 /* WatchKeynoteControllerApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8BBD933B1E6E3F19009DCF65 /* WatchKeynoteControllerWatchApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BBD935F1E6E3F1A009DCF65 /* Build configuration list for PBXNativeTarget "WatchKeynoteControllerWatchApp" */;
+			buildPhases = (
+				C8465EA83A7621ECA22CC52D /* [CP] Check Pods Manifest.lock */,
+				8BBD933A1E6E3F19009DCF65 /* Resources */,
+				8BBD935E1E6E3F1A009DCF65 /* Embed App Extensions */,
+				CADCE4755BCDD297B53668D0 /* Frameworks */,
+				6273E82FCFCFB1A85E02418C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8BBD934B1E6E3F19009DCF65 /* PBXTargetDependency */,
+			);
+			name = WatchKeynoteControllerWatchApp;
+			productName = WatchKeynoteControllerWatchApp;
+			productReference = 8BBD933C1E6E3F19009DCF65 /* WatchKeynoteControllerWatchApp.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		8BBD93471E6E3F19009DCF65 /* WatchKeynoteControllerWatchApp Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BBD935B1E6E3F1A009DCF65 /* Build configuration list for PBXNativeTarget "WatchKeynoteControllerWatchApp Extension" */;
+			buildPhases = (
+				A9272935B09B7106F8AA50D1 /* [CP] Check Pods Manifest.lock */,
+				8BBD93441E6E3F19009DCF65 /* Sources */,
+				8BBD93451E6E3F19009DCF65 /* Frameworks */,
+				8BBD93461E6E3F19009DCF65 /* Resources */,
+				1E9FD1FD8294916120716E1A /* [CP] Embed Pods Frameworks */,
+				784E8829E4C5430FC9A4D912 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WatchKeynoteControllerWatchApp Extension";
+			productName = "WatchKeynoteControllerWatchApp Extension";
+			productReference = 8BBD93481E6E3F19009DCF65 /* WatchKeynoteControllerWatchApp Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -92,6 +367,41 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 54JDK55DR5;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.Mac = {
+								enabled = 0;
+							};
+						};
+					};
+					8BBD93271E6E3EF6009DCF65 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 54JDK55DR5;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					8BBD933B1E6E3F19009DCF65 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 54JDK55DR5;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					8BBD93471E6E3F19009DCF65 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 54JDK55DR5;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -109,6 +419,9 @@
 			projectRoot = "";
 			targets = (
 				8BBD93131E6E3E11009DCF65 /* WatchKeynoteController */,
+				8BBD93271E6E3EF6009DCF65 /* WatchKeynoteControllerApp */,
+				8BBD933B1E6E3F19009DCF65 /* WatchKeynoteControllerWatchApp */,
+				8BBD93471E6E3F19009DCF65 /* WatchKeynoteControllerWatchApp Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -123,18 +436,247 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8BBD93261E6E3EF6009DCF65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BBD93351E6E3EF6009DCF65 /* LaunchScreen.storyboard in Resources */,
+				8BBD93321E6E3EF6009DCF65 /* Assets.xcassets in Resources */,
+				8BBD93301E6E3EF6009DCF65 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BBD933A1E6E3F19009DCF65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BBD93421E6E3F19009DCF65 /* Assets.xcassets in Resources */,
+				8BBD93401E6E3F19009DCF65 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BBD93461E6E3F19009DCF65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BBD93561E6E3F1A009DCF65 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00E3638D791A5A9B62D008A6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		05C6CC1E360A9C93E98C55A7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WatchKeynoteControllerApp/Pods-WatchKeynoteControllerApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1DF71E75F8AE0FBFE49F4A4A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WatchKeynoteController/Pods-WatchKeynoteController-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1E9FD1FD8294916120716E1A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WatchKeynoteControllerWatchApp Extension/Pods-WatchKeynoteControllerWatchApp Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6273E82FCFCFB1A85E02418C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WatchKeynoteControllerWatchApp/Pods-WatchKeynoteControllerWatchApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		784E8829E4C5430FC9A4D912 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WatchKeynoteControllerWatchApp Extension/Pods-WatchKeynoteControllerWatchApp Extension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9272935B09B7106F8AA50D1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C8465EA83A7621ECA22CC52D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CDE7FCD02EB46CC520A5FB6F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E62963732128267029CE6F78 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WatchKeynoteController/Pods-WatchKeynoteController-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F724639713764AF9A232973F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WatchKeynoteControllerApp/Pods-WatchKeynoteControllerApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8BBD93101E6E3E11009DCF65 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BBD93691E6E5B18009DCF65 /* KeySender.swift in Sources */,
+				8BBD936A1E6E5B18009DCF65 /* KeySenderRecivingService.swift in Sources */,
 				8BBD93181E6E3E11009DCF65 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8BBD93241E6E3EF6009DCF65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BBD932D1E6E3EF6009DCF65 /* ViewController.swift in Sources */,
+				8BBD932B1E6E3EF6009DCF65 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BBD93441E6E3F19009DCF65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BBD93541E6E3F1A009DCF65 /* NotificationController.swift in Sources */,
+				8BBD93521E6E3F1A009DCF65 /* ExtensionDelegate.swift in Sources */,
+				8BBD93501E6E3F19009DCF65 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8BBD934B1E6E3F19009DCF65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8BBD93471E6E3F19009DCF65 /* WatchKeynoteControllerWatchApp Extension */;
+			targetProxy = 8BBD934A1E6E3F19009DCF65 /* PBXContainerItemProxy */;
+		};
+		8BBD93591E6E3F1A009DCF65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8BBD933B1E6E3F19009DCF65 /* WatchKeynoteControllerWatchApp */;
+			targetProxy = 8BBD93581E6E3F1A009DCF65 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8BBD931B1E6E3E11009DCF65 /* MainMenu.xib */ = {
@@ -143,6 +685,30 @@
 				8BBD931C1E6E3E11009DCF65 /* Base */,
 			);
 			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		8BBD932E1E6E3EF6009DCF65 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BBD932F1E6E3EF6009DCF65 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8BBD93331E6E3EF6009DCF65 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BBD93341E6E3EF6009DCF65 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8BBD933E1E6E3F19009DCF65 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BBD933F1E6E3F19009DCF65 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -240,12 +806,15 @@
 		};
 		8BBD93221E6E3E11009DCF65 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A22EB583BF3DF3A3CD688107 /* Pods-WatchKeynoteController.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 54JDK55DR5;
 				INFOPLIST_FILE = WatchKeynoteController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ezefranca.WatchKeynoteController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -254,15 +823,139 @@
 		};
 		8BBD93231E6E3E11009DCF65 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0B9B66FA496D3B31426FAF1 /* Pods-WatchKeynoteController.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 54JDK55DR5;
 				INFOPLIST_FILE = WatchKeynoteController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ezefranca.WatchKeynoteController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		8BBD93381E6E3EF6009DCF65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16F1E0B851659DE7EFD8B362 /* Pods-WatchKeynoteControllerApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WatchKeynoteControllerApp/WatchKeynoteControllerApp.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 54JDK55DR5;
+				INFOPLIST_FILE = WatchKeynoteControllerApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ezefranca.WatchKeynoteControllerApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		8BBD93391E6E3EF6009DCF65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E5DF31EAABA495D8C5E58B7 /* Pods-WatchKeynoteControllerApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WatchKeynoteControllerApp/WatchKeynoteControllerApp.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 54JDK55DR5;
+				INFOPLIST_FILE = WatchKeynoteControllerApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ezefranca.WatchKeynoteControllerApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 3.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8BBD935C1E6E3F1A009DCF65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AEF0FDC6D35C03A777E529C /* Pods-WatchKeynoteControllerWatchApp Extension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "WatchKeynoteControllerWatchApp Extension/WatchKeynoteControllerWatchApp Extension.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 54JDK55DR5;
+				INFOPLIST_FILE = "WatchKeynoteControllerWatchApp Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ezefranca.WatchKeynoteControllerApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		8BBD935D1E6E3F1A009DCF65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF5C6271B60FD1F2BF9A7176 /* Pods-WatchKeynoteControllerWatchApp Extension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "WatchKeynoteControllerWatchApp Extension/WatchKeynoteControllerWatchApp Extension.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 54JDK55DR5;
+				INFOPLIST_FILE = "WatchKeynoteControllerWatchApp Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ezefranca.WatchKeynoteControllerApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		8BBD93601E6E3F1A009DCF65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05E4E7D26E834CFE0D8218C8 /* Pods-WatchKeynoteControllerWatchApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WatchKeynoteControllerWatchApp/WatchKeynoteControllerWatchApp.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 54JDK55DR5;
+				IBSC_MODULE = WatchKeynoteControllerWatchApp_Extension;
+				INFOPLIST_FILE = WatchKeynoteControllerWatchApp/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ezefranca.WatchKeynoteControllerApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		8BBD93611E6E3F1A009DCF65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A03E7C1A3A4F1D4C33589BF /* Pods-WatchKeynoteControllerWatchApp.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WatchKeynoteControllerWatchApp/WatchKeynoteControllerWatchApp.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 54JDK55DR5;
+				IBSC_MODULE = WatchKeynoteControllerWatchApp_Extension;
+				INFOPLIST_FILE = WatchKeynoteControllerWatchApp/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ezefranca.WatchKeynoteControllerApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
 			name = Release;
 		};
@@ -285,6 +978,34 @@
 				8BBD93231E6E3E11009DCF65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BBD93371E6E3EF6009DCF65 /* Build configuration list for PBXNativeTarget "WatchKeynoteControllerApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BBD93381E6E3EF6009DCF65 /* Debug */,
+				8BBD93391E6E3EF6009DCF65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BBD935B1E6E3F1A009DCF65 /* Build configuration list for PBXNativeTarget "WatchKeynoteControllerWatchApp Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BBD935C1E6E3F1A009DCF65 /* Debug */,
+				8BBD935D1E6E3F1A009DCF65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BBD935F1E6E3F1A009DCF65 /* Build configuration list for PBXNativeTarget "WatchKeynoteControllerWatchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BBD93601E6E3F1A009DCF65 /* Debug */,
+				8BBD93611E6E3F1A009DCF65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

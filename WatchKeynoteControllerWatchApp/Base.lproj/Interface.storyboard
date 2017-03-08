@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11508"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchKeynoteControllerWatchApp" customModuleProvider="target">
+                    <items>
+                        <label alignment="center" text="Disconnected" textAlignment="center" id="w1o-3I-oBT">
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                        </label>
+                        <group width="50" height="50" alignment="center" verticalAlignment="center" contentMode="scaleAspectFit" id="cDj-Hn-W4m">
+                            <items>
+                                <button alignment="center" verticalAlignment="center" backgroundImage="next" id="YwS-tS-f80">
+                                    <connections>
+                                        <action selector="nextTouched" destination="AgC-eL-Hgc" id="Khc-ze-r5U"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <separator alignment="left" id="d5t-iN-JZM"/>
+                        <group width="50" height="50" alignment="center" verticalAlignment="center" contentMode="scaleAspectFit" id="Nu4-oE-hLT">
+                            <items>
+                                <button alignment="center" verticalAlignment="center" backgroundImage="previous" id="RCa-LS-keM">
+                                    <connections>
+                                        <action selector="previousTouched" destination="AgC-eL-Hgc" id="JCo-9m-fwS"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <menu key="menu" id="XiK-l9-kOn">
+                        <items>
+                            <menuItem title="Menu Item" icon="info" id="PmW-TF-wpd"/>
+                        </items>
+                    </menu>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="previousButton" destination="RCa-LS-keM" id="fpP-iJ-53q"/>
+                        <outlet property="statusLabel" destination="w1o-3I-oBT" id="7Jm-ya-637"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="344"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="WatchKeynoteControllerWatchApp" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+    </scenes>
+</document>

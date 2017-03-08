@@ -7,21 +7,39 @@
 //
 
 import Cocoa
+import MultipeerConnectivity
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-    @IBOutlet weak var window: NSWindow!
-
-
+    @IBOutlet weak var statusMenu: NSMenu!
+    
+    var server: KeySenderRecivingService?
+    
+    let statusItem = NSStatusBar.system().statusItem(withLength: NSVariableStatusItemLength)
+    
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Insert code here to initialize your application
+        
+        statusItem.image = NSImage(named: "menuIcon")
+//        statusBar.menu = mainMenu
+//        statusBar.highlightMode = true
+        statusItem.menu = statusMenu
+        statusItem.highlightMode = true
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application
     }
 
+    @IBAction func statusMenuAction(_ sender: NSMenuItem) {
 
+        if let _ = server {
+            server = nil
+            sender.state = NSOffState
+        }
+        else {
+            server = KeySenderRecivingService()
+            sender.state = NSOnState
+        }
+    }
 }
-
