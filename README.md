@@ -18,8 +18,8 @@ After run `WatchKeynoteController` mac app, go to your status bar and enable the
 ## Connect your iPhone to Server
 
 Download this repository and run iOS/watchOS target or download last at AppStore last release (SOON) [here]()
-![](https://raw.githubusercontent.com/ezefranca/WatchNote/master/btn.png)
-
+![]()
+<img src="https://raw.githubusercontent.com/ezefranca/WatchNote/master/btn.png" width="120" height="40" />
 
 ![](https://media.giphy.com/media/uo3tl7TgIHdK0/giphy.gif)
 
