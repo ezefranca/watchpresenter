@@ -5,7 +5,7 @@
 
 ## Download 
 
-Download this repository and run macOS target or download last binary release [here]()
+Download this repository and run macOS target or download last binary release [here](https://github.com/ezefranca/WatchNote/files/826468/WatchKeynoteController.zip)
 
 ## Start macOS Server
 
