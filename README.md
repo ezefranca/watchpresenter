@@ -1,3 +1,4 @@
+<img src="https://raw.githubusercontent.com/ezefranca/WatchNote/master/WatchKeynoteController/Assets.xcassets/AppIcon.appiconset/1024.png" width="80" height="80" />
 # WatchNote
 ⌚️ 🤓 Controlling yours Keynote Slides using Apple Watch
 
@@ -5,7 +6,7 @@
 
 ## Download 
 
-Download this repository and run macOS target or download last binary release [here]()
+Download this repository and run macOS target or download last binary release [here](https://github.com/ezefranca/WatchNote/files/826468/WatchKeynoteController.zip)
 
 ## Start macOS Server
 
@@ -17,8 +18,8 @@ After run `WatchKeynoteController` mac app, go to your status bar and enable the
 ## Connect your iPhone to Server
 
 Download this repository and run iOS/watchOS target or download last at AppStore last release (SOON) [here]()
-![](https://raw.githubusercontent.com/ezefranca/WatchNote/master/btn.png)
-
+![]()
+<img src="https://raw.githubusercontent.com/ezefranca/WatchNote/master/btn.png" width="120" height="40" />
 
 ![](https://media.giphy.com/media/uo3tl7TgIHdK0/giphy.gif)
 
