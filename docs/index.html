@@ -36,35 +36,7 @@
 		background-color: #eee;
 	}
 	</style>
-	<script id="facebook-jssdk" src="./index_files/sdk.js"></script><script data-strip-on-export="">
-		var id = "1213397019";
-		function exportHTML(route) {
-			var toStrip = document.querySelectorAll('[data-strip-on-export]');
-			for (var i=0; i<toStrip.length; i++) {
-				toStrip[i].parentElement.removeChild(toStrip[i]);
-			}
-			document.getElementById('content').removeAttribute('contentEditable');
-			var html = document.querySelector("html").outerHTML;
-			var form = document.createElement('form');
-			form.action = "/export";
-			form.method = "POST";
-			form.target = "_blank";
-			var setVal = function(name, val) {
-				var input = document.createElement("input");
-				input.type = "hidden";
-				input.name = name;
-				input.value = val;
-				form.appendChild(input);
-			}
-			setVal("html", html);
-			setVal("id", id);
-			setVal("route", route);
-			setVal("name", document.title);
-			form.style.display = "none";
-			document.body.appendChild(form);
-			form.submit();
-		}
-	</script>
+
 	
 
 <link href="./index_files/font-awesome.min.css" rel="stylesheet">
@@ -238,12 +210,6 @@ h1, h2, h3, h4, h5, h6 {
 	  fjs.parentNode.insertBefore(js, fjs);
 	}(document, 'script', 'facebook-jssdk'));</script>
 	<!-- end Facebook SDK -->
-
-
-	<div id="controls" data-strip-on-export="">
-		<button onclick="exportHTML(&#39;github&#39;)">Export to Github</button>
-		<button onclick="exportHTML(&#39;url&#39;)">Get shareable URL</button>
-	</div>
 <div id="content" contenteditable="">
 
 
@@ -283,7 +249,7 @@ h1, h2, h3, h4, h5, h6 {
 
 Presenting keynotes like a boss :)
 
-Download WatchNotes macOS app server, connected using your iPhone and in your Apple Watch, open WatchNote app and let's go. Use the buttons to pass foward or back in your slides.</p>
+Download WatchNotes macOS app server, connected using your iPhone and in your Apple Watch, open WatchNote app and let's go. Use the buttons to pass forward or back in your slides.</p>
 
 <p>
 	<a href="https://itunes.apple.com/us/app/watchnotes/id1213397019?mt=8&amp;uo=4"><img class="appstore" src="./index_files/appstore.svg" alt="Download on the Apple App Store"></a>
