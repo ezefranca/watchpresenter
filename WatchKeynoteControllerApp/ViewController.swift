@@ -22,7 +22,7 @@ class ViewController: UIViewController, MCBrowserViewControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         if WCSession.isSupported() {
-            wcSession = WCSession.default()
+            wcSession = WCSession.default
             wcSession.delegate = self
             wcSession.activate()
         }

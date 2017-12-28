@@ -20,7 +20,7 @@ class InterfaceController: WKInterfaceController {
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         if WCSession.isSupported() {
-            wcSession = WCSession.default()
+            wcSession = WCSession.default
             wcSession.delegate = self
             wcSession.activate()
         }
