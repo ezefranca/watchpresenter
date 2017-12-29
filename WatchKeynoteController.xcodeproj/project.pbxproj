@@ -24,6 +24,9 @@
 		8BBD93691E6E5B18009DCF65 /* KeySender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBD93671E6E5B18009DCF65 /* KeySender.swift */; };
 		8BBD936A1E6E5B18009DCF65 /* KeySenderRecivingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBD93681E6E5B18009DCF65 /* KeySenderRecivingService.swift */; };
 		8BBD936C1E6E77BB009DCF65 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BBD936B1E6E77BB009DCF65 /* WatchConnectivity.framework */; };
+		C9ED359B1FF648E700479A21 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9ED35941FF6472F00479A21 /* MainMenu.xib */; };
+		C9ED359C1FF648EE00479A21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BBD93191E6E3E11009DCF65 /* Assets.xcassets */; };
+		C9ED359E1FF64CE900479A21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BBD93411E6E3F19009DCF65 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,7 +77,6 @@
 		8BBD93141E6E3E11009DCF65 /* WatchKeynoteController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchKeynoteController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BBD93171E6E3E11009DCF65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BBD93191E6E3E11009DCF65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8BBD931C1E6E3E11009DCF65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		8BBD931E1E6E3E11009DCF65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BBD93281E6E3EF6009DCF65 /* WatchKeynoteControllerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchKeynoteControllerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BBD932A1E6E3EF6009DCF65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 		8BBD93671E6E5B18009DCF65 /* KeySender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeySender.swift; sourceTree = "<group>"; };
 		8BBD93681E6E5B18009DCF65 /* KeySenderRecivingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeySenderRecivingService.swift; sourceTree = "<group>"; };
 		8BBD936B1E6E77BB009DCF65 /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.2.sdk/System/Library/Frameworks/WatchConnectivity.framework; sourceTree = DEVELOPER_DIR; };
+		C9ED35951FF6472F00479A21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = WatchKeynoteController/Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,7 +180,7 @@
 				8BBD93671E6E5B18009DCF65 /* KeySender.swift */,
 				8BBD93681E6E5B18009DCF65 /* KeySenderRecivingService.swift */,
 				8BBD93191E6E3E11009DCF65 /* Assets.xcassets */,
-				8BBD931B1E6E3E11009DCF65 /* MainMenu.xib */,
+				C9ED35941FF6472F00479A21 /* MainMenu.xib */,
 				8BBD931E1E6E3E11009DCF65 /* Info.plist */,
 			);
 			path = WatchKeynoteController;
@@ -239,6 +242,7 @@
 			buildPhases = (
 				8BBD93101E6E3E11009DCF65 /* Sources */,
 				8BBD93111E6E3E11009DCF65 /* Frameworks */,
+				C9ED359A1FF648E200479A21 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -315,6 +319,7 @@
 				TargetAttributes = {
 					8BBD93131E6E3E11009DCF65 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = ENLH686A45;
 						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -326,7 +331,7 @@
 					8BBD93271E6E3EF6009DCF65 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = ENLH686A45;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -336,7 +341,7 @@
 					8BBD933B1E6E3F19009DCF65 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = ENLH686A45;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -346,7 +351,7 @@
 					8BBD93471E6E3F19009DCF65 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = ENLH686A45;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -400,7 +405,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9ED359E1FF64CE900479A21 /* Assets.xcassets in Resources */,
 				8BBD93561E6E3F1A009DCF65 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9ED359A1FF648E200479A21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9ED359C1FF648EE00479A21 /* Assets.xcassets in Resources */,
+				C9ED359B1FF648E700479A21 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,14 +467,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8BBD931B1E6E3E11009DCF65 /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8BBD931C1E6E3E11009DCF65 /* Base */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
 		8BBD932E1E6E3EF6009DCF65 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -482,6 +489,14 @@
 				8BBD933F1E6E3F19009DCF65 /* Base */,
 			);
 			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		C9ED35941FF6472F00479A21 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9ED35951FF6472F00479A21 /* Base */,
+			);
+			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -595,7 +610,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = ENLH686A45;
 				INFOPLIST_FILE = WatchKeynoteController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
@@ -612,7 +627,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = ENLH686A45;
 				INFOPLIST_FILE = WatchKeynoteController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
@@ -629,13 +644,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = WatchKeynoteControllerApp/WatchKeynoteControllerApp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = ENLH686A45;
 				INFOPLIST_FILE = WatchKeynoteControllerApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ezefranca.WatchKeynoteControllerApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e718cb98-1dfc-4762-b58d-21c57de6264e";
+				PROVISIONING_PROFILE_SPECIFIER = WWEliott;
 				SDKROOT = iphoneos;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
@@ -649,13 +667,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = WatchKeynoteControllerApp/WatchKeynoteControllerApp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = ENLH686A45;
 				INFOPLIST_FILE = WatchKeynoteControllerApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ezefranca.WatchKeynoteControllerApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e718cb98-1dfc-4762-b58d-21c57de6264e";
+				PROVISIONING_PROFILE_SPECIFIER = WWEliott;
 				SDKROOT = iphoneos;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
@@ -670,12 +691,15 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "WatchKeynoteControllerWatchApp Extension/WatchKeynoteControllerWatchApp Extension.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = ENLH686A45;
 				INFOPLIST_FILE = "WatchKeynoteControllerWatchApp Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ezefranca.WatchKeynoteControllerApp.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "e718cb98-1dfc-4762-b58d-21c57de6264e";
+				PROVISIONING_PROFILE_SPECIFIER = WWEliott;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
@@ -691,12 +715,15 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "WatchKeynoteControllerWatchApp Extension/WatchKeynoteControllerWatchApp Extension.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = ENLH686A45;
 				INFOPLIST_FILE = "WatchKeynoteControllerWatchApp Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ezefranca.WatchKeynoteControllerApp.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "e718cb98-1dfc-4762-b58d-21c57de6264e";
+				PROVISIONING_PROFILE_SPECIFIER = WWEliott;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
@@ -714,12 +741,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = WatchKeynoteControllerWatchApp/WatchKeynoteControllerWatchApp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = ENLH686A45;
 				IBSC_MODULE = WatchKeynoteControllerWatchApp_Extension;
 				INFOPLIST_FILE = WatchKeynoteControllerWatchApp/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ezefranca.WatchKeynoteControllerApp.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e718cb98-1dfc-4762-b58d-21c57de6264e";
+				PROVISIONING_PROFILE_SPECIFIER = WWEliott;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -735,12 +765,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = WatchKeynoteControllerWatchApp/WatchKeynoteControllerWatchApp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = ENLH686A45;
 				IBSC_MODULE = WatchKeynoteControllerWatchApp_Extension;
 				INFOPLIST_FILE = WatchKeynoteControllerWatchApp/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ezefranca.WatchKeynoteControllerApp.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e718cb98-1dfc-4762-b58d-21c57de6264e";
+				PROVISIONING_PROFILE_SPECIFIER = WWEliott;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
