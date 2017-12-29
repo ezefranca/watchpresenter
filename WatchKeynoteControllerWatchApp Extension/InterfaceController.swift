@@ -41,6 +41,15 @@ class InterfaceController: WKInterfaceController, WKCrownDelegate {
         shaker.start()
     }
     
+    @IBAction func shakeStopPressed() {
+            shaker.stop()
+    }
+    
+    @IBAction func shakeStartPressed() {
+        shaker.delegate = self
+        shaker.start()
+    }
+    
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()

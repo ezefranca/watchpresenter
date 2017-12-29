@@ -39,7 +39,16 @@
                     </items>
                     <menu key="menu" id="XiK-l9-kOn">
                         <items>
-                            <menuItem title="Menu Item" icon="info" id="PmW-TF-wpd"/>
+                            <menuItem title="Start Shaker" icon="accept" id="PmW-TF-wpd">
+                                <connections>
+                                    <action selector="shakeStartPressed" destination="AgC-eL-Hgc" id="7gN-eS-SiJ"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Stop Shaker" icon="decline" id="aRn-Nl-26H">
+                                <connections>
+                                    <action selector="shakeStopPressed" destination="AgC-eL-Hgc" id="FCO-8B-zXl"/>
+                                </connections>
+                            </menuItem>
                         </items>
                     </menu>
                     <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
