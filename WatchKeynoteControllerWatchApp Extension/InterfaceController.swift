@@ -9,6 +9,7 @@
 import WatchKit
 import Foundation
 import WatchConnectivity
+import CoreMotion
 
 class InterfaceController: WKInterfaceController, WKCrownDelegate {
     
@@ -16,6 +17,8 @@ class InterfaceController: WKInterfaceController, WKCrownDelegate {
     fileprivate var wcSession: WCSession!
     @IBOutlet var statusLabel: WKInterfaceLabel!
     
+    var shaker:WatchShaker = WatchShaker(delay: 2.0)
+
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         if WCSession.isSupported() {
@@ -23,7 +26,7 @@ class InterfaceController: WKInterfaceController, WKCrownDelegate {
             wcSession.delegate = self
             wcSession.activate()
         }
-  
+        
 //        crownSequencer.delegate = self
 //        crownSequencer.focus()
     }
@@ -33,7 +36,9 @@ class InterfaceController: WKInterfaceController, WKCrownDelegate {
         super.willActivate()
         crownSequencer.delegate = self
         crownSequencer.focus()
-
+        
+        shaker.delegate = self
+        shaker.start()
     }
     
     override func didDeactivate() {
@@ -80,6 +85,25 @@ class InterfaceController: WKInterfaceController, WKCrownDelegate {
         //statusLabel.setText("\(rotationalDelta)")
     }
     
+}
+
+extension InterfaceController: WatchShakerDelegate
+{
+    func watchShakerDidShake(_ watchShaker: WatchShaker) {
+        print("YOU HAVE SHAKEN YOUR ⌚️⌚️⌚️")
+//        statusLabel.setText("Shook < 2.0")
+        self.sendButton("NEXT")
+    }
+    
+    func watchShakerDidShake2(_ watchShaker: WatchShaker) {
+        print("YOU HAVE SHAKEN YOUR ⌚️⌚️⌚️")
+        self.sendButton("BACK")
+//        statusLabel.setText("Shook >= 2.0")
+    }
+    
+    func watchShaker(_ watchShaker: WatchShaker, didFailWith error: Error) {
+        print(error.localizedDescription)
+    }
 }
 
 extension InterfaceController : WCSessionDelegate {

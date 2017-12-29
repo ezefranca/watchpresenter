@@ -27,6 +27,7 @@
 		C9ED359B1FF648E700479A21 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9ED35941FF6472F00479A21 /* MainMenu.xib */; };
 		C9ED359C1FF648EE00479A21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BBD93191E6E3E11009DCF65 /* Assets.xcassets */; };
 		C9ED359E1FF64CE900479A21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BBD93411E6E3F19009DCF65 /* Assets.xcassets */; };
+		C9ED35A01FF65F2300479A21 /* WatchShake.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9ED359F1FF65F2300479A21 /* WatchShake.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +105,7 @@
 		8BBD93681E6E5B18009DCF65 /* KeySenderRecivingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeySenderRecivingService.swift; sourceTree = "<group>"; };
 		8BBD936B1E6E77BB009DCF65 /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.2.sdk/System/Library/Frameworks/WatchConnectivity.framework; sourceTree = DEVELOPER_DIR; };
 		C9ED35951FF6472F00479A21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = WatchKeynoteController/Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		C9ED359F1FF65F2300479A21 /* WatchShake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchShake.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +218,7 @@
 			children = (
 				8BBD93661E6E457C009DCF65 /* WatchKeynoteControllerWatchApp Extension.entitlements */,
 				8BBD934F1E6E3F19009DCF65 /* InterfaceController.swift */,
+				C9ED359F1FF65F2300479A21 /* WatchShake.swift */,
 				8BBD93511E6E3F1A009DCF65 /* ExtensionDelegate.swift */,
 				8BBD93531E6E3F1A009DCF65 /* NotificationController.swift */,
 				8BBD93551E6E3F1A009DCF65 /* Assets.xcassets */,
@@ -447,6 +450,7 @@
 			files = (
 				8BBD93541E6E3F1A009DCF65 /* NotificationController.swift in Sources */,
 				8BBD93521E6E3F1A009DCF65 /* ExtensionDelegate.swift in Sources */,
+				C9ED35A01FF65F2300479A21 /* WatchShake.swift in Sources */,
 				8BBD93501E6E3F19009DCF65 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
