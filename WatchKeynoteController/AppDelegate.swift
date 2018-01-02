@@ -16,11 +16,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     var server: KeySenderRecivingService?
     
-    let statusItem = NSStatusBar.system().statusItem(withLength: NSVariableStatusItemLength)
+    let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         
-        statusItem.image = NSImage(named: "menuIcon")
+        statusItem.image = NSImage(named: NSImage.Name(rawValue: "menuIcon"))
 //        statusBar.menu = mainMenu
 //        statusBar.highlightMode = true
         statusItem.menu = statusMenu
@@ -35,11 +35,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
         if let _ = server {
             server = nil
-            sender.state = NSOffState
+            sender.state = .off
         }
         else {
             server = KeySenderRecivingService()
-            sender.state = NSOnState
+            sender.state = .on
         }
     }
 }

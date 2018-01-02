@@ -25,9 +25,10 @@ Download this repository and run iOS/watchOS target or download at AppStore last
 
 ## Controlling Keynote using Apple Watch
 
-Now, in your Apple Watch, open `WatchNote` app and let's go. Use the buttons to pass foward or back in your slides.
+Now, in your Apple Watch, open `WatchNote` app and let's go. Use the buttons to pass foward or back in your slides or do you prefer shaking your wrist? It's possible.
 
 ![](https://raw.githubusercontent.com/ezefranca/WatchNote/master/print.png?token=ADerUIw--3bguYeQvgHeVDvw-TruWp10ks5YyKGewA%3D%3D)
+![](shake.png)
 
 ## How it's works?
 
@@ -39,7 +40,7 @@ Made just for fun.
 
 ## Future
 
-[ ] Add [WatchShaker](https://github.com/ezefranca/WatchShaker) to use your ⌚️ shake movements to change slides.
+[x] Add [WatchShaker](https://github.com/ezefranca/WatchShaker) to use your ⌚️ shake movements to change slides.
 
 ## Contribute
 

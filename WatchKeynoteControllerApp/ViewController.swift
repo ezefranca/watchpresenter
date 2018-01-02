@@ -22,7 +22,7 @@ class ViewController: UIViewController, MCBrowserViewControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         if WCSession.isSupported() {
-            wcSession = WCSession.default()
+            wcSession = WCSession.default
             wcSession.delegate = self
             wcSession.activate()
         }
@@ -71,7 +71,7 @@ class ViewController: UIViewController, MCBrowserViewControllerDelegate {
             let controller = MCBrowserViewController(serviceType: "Keyboard", session: session)
             controller.delegate = self
             controller.maximumNumberOfPeers = 1
-            
+            updateConnectButtonTitle()
             showDetailViewController(controller, sender: self)
         }
     }
