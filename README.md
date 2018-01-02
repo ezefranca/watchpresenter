@@ -1,5 +1,5 @@
-<img src="https://raw.githubusercontent.com/ezefranca/WatchNote/master/WatchKeynoteController/Assets.xcassets/AppIcon.appiconset/1024.png" width="80" height="80" />
 # WatchNote
+
 ⌚️ 🤓 Controlling yours Keynote Slides using Apple Watch
 
 # How to Use ?
@@ -40,7 +40,10 @@ Made just for fun.
 
 ## Future
 
-[x] Add [WatchShaker](https://github.com/ezefranca/WatchShaker) to use your ⌚️ shake movements to change slides.
+~~[x] Add [WatchShaker](https://github.com/ezefranca/WatchShaker) to use your ⌚️ shake movements to change slides.~~ 
+Done: [#2](https://github.com/ezefranca/WatchNote/pull/2) 
+
+Thanks to Eliott hauteclair – [@Eliottiosdevs](https://github.com/Eliottiosdevs)
 
 ## Contribute
 
@@ -50,4 +53,4 @@ We would love for you to contribute to **WatchNote**, check the ``LICENSE`` file
 
 Ezequiel França – [@ezefranca](https://twitter.com/ezefranca) – ezequiel.ifsp@gmail.com
 
-Distributed under the Apache license. See ``LICENSE`` for more information.
+Distributed under the MIT license. See ``LICENSE`` for more information.
