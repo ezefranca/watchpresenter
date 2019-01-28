@@ -26,6 +26,8 @@ class ViewController: UIViewController, MCBrowserViewControllerDelegate {
             wcSession.delegate = self
             wcSession.activate()
         }
+        connectionToggleButton.layer.cornerRadius = 10
+        connectionToggleButton.clipsToBounds = true
         updateConnectButtonTitle()
     }
     

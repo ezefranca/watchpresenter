@@ -322,7 +322,7 @@
 				TargetAttributes = {
 					8BBD93131E6E3E11009DCF65 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = ENLH686A45;
+						DevelopmentTeam = 54JDK55DR5;
 						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -611,7 +611,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = ENLH686A45;
+				DEVELOPMENT_TEAM = 54JDK55DR5;
 				INFOPLIST_FILE = WatchKeynoteController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
@@ -628,7 +628,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = ENLH686A45;
+				DEVELOPMENT_TEAM = 54JDK55DR5;
 				INFOPLIST_FILE = WatchKeynoteController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;

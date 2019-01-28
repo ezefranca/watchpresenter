@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13771" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14460.31" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
     <device id="watch42" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13756"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14460.16"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
@@ -20,16 +21,20 @@
                         <group width="50" height="50" alignment="center" verticalAlignment="center" contentMode="scaleAspectFit" id="cDj-Hn-W4m">
                             <items>
                                 <button alignment="center" verticalAlignment="center" backgroundImage="next" id="YwS-tS-f80">
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <connections>
                                         <action selector="nextTouched" destination="AgC-eL-Hgc" id="Khc-ze-r5U"/>
                                     </connections>
                                 </button>
                             </items>
                         </group>
-                        <separator alignment="left" id="d5t-iN-JZM"/>
+                        <separator alignment="left" id="d5t-iN-JZM">
+                            <color key="color" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </separator>
                         <group width="50" height="50" alignment="center" verticalAlignment="center" contentMode="scaleAspectFit" id="Nu4-oE-hLT">
                             <items>
                                 <button alignment="center" verticalAlignment="center" backgroundImage="previous" id="RCa-LS-keM">
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <connections>
                                         <action selector="previousTouched" destination="AgC-eL-Hgc" id="JCo-9m-fwS"/>
                                     </connections>
@@ -51,7 +56,7 @@
                             </menuItem>
                         </items>
                     </menu>
-                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                     <connections>
                         <outlet property="previousButton" destination="RCa-LS-keM" id="fpP-iJ-53q"/>
                         <outlet property="statusLabel" destination="w1o-3I-oBT" id="7Jm-ya-637"/>
