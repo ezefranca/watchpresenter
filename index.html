@@ -7,9 +7,6 @@
 	<title>WatchNotes</title>
 
 	<style data-strip-on-export="">
-	[contentEditable] {
-		outline: none;
-	}
 	#controls {
 		position: fixed;
 		/*background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0));*/
@@ -36,35 +33,6 @@
 		background-color: #eee;
 	}
 	</style>
-	<script id="facebook-jssdk" src="./index_files/sdk.js"></script><script data-strip-on-export="">
-		var id = "1213397019";
-		function exportHTML(route) {
-			var toStrip = document.querySelectorAll('[data-strip-on-export]');
-			for (var i=0; i<toStrip.length; i++) {
-				toStrip[i].parentElement.removeChild(toStrip[i]);
-			}
-			document.getElementById('content').removeAttribute('contentEditable');
-			var html = document.querySelector("html").outerHTML;
-			var form = document.createElement('form');
-			form.action = "/export";
-			form.method = "POST";
-			form.target = "_blank";
-			var setVal = function(name, val) {
-				var input = document.createElement("input");
-				input.type = "hidden";
-				input.name = name;
-				input.value = val;
-				form.appendChild(input);
-			}
-			setVal("html", html);
-			setVal("id", id);
-			setVal("route", route);
-			setVal("name", document.title);
-			form.style.display = "none";
-			document.body.appendChild(form);
-			form.submit();
-		}
-	</script>
 	
 
 <link href="./index_files/font-awesome.min.css" rel="stylesheet">
@@ -227,27 +195,106 @@ h1, h2, h3, h4, h5, h6 {
 <style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
 .fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;_background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yL/r/s816eWC-2sl.gif);cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;_background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yL/r/s816eWC-2sl.gif)}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;_background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yL/r/s816eWC-2sl.gif)}.fb_dialog_loader{background-color:#f6f7f9;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;bottom:0;left:0;right:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #29487d;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f9;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
 .fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}</style></head>
-<body>
-	<!-- begin Facebook SDK -->
-	<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_http" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_http" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./index_files/ao6eUeuGXQq.html" style="border: none;"></iframe><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./index_files/ao6eUeuGXQq(1).html" style="border: none;"></iframe></div></div></div>
-	<script>(function(d, s, id) {
-	  var js, fjs = d.getElementsByTagName(s)[0];
-	  if (d.getElementById(id)) return;
-	  js = d.createElement(s); js.id = id;
-	  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=385205984962960&version=v2.0";
-	  fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));</script>
-	<!-- end Facebook SDK -->
+<meta name="language" content="en">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
+<meta name="distribution" content="global">
+<title>Apple Watch App | Watchaware</title>
+<meta name="ROBOTS" content="INDEX,FOLLOW">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1.5">
+<meta name="description" content="Controlling yours Keynote Slides using Apple Watch.">
 
-	<div id="controls" data-strip-on-export="">
-		<button onclick="exportHTML(&#39;github&#39;)">Export to Github</button>
-		<button onclick="exportHTML(&#39;url&#39;)">Get shareable URL</button>
-	</div>
-<div id="content" contenteditable="">
+<meta itemprop="name" content="Apple Watch App">
+<meta itemprop="description" content="Controlling yours Keynote Slides using Apple Watch.">
+<meta itemprop="image" content="https://s3.amazonaws.com/itunes-images/app-assets/1213397019/24734720/1213397019-24734720-circularArtwork-300.jpg">
 
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@WatchAware">
+<meta name="twitter:title" content="Apple Watch App">
+<meta name="twitter:description" content="Controlling yours Keynote Slides using Apple Watch.">
+<meta name="twitter:image:src" content="https://s3.amazonaws.com/itunes-images/app-assets/1213397019/24734720/1213397019-24734720-circularArtwork-300.jpg">
+<meta name="twitter:widgets:theme" content="light">
+<meta name="twitter:widgets:link-color" content="#dc7d1a">
+<meta name="twitter:partner" content="tfwp">
+<script async="" src="./index_files/analytics.js"></script><script async="" src="./index_files/analytics.js"></script><script src="./index_files/_HOeMcPF0bIjMhTaKMqD0MFYkB4.js"></script><link rel="me" href="https://twitter.com/watchaware">
 
-<div id="chevron" class="fa fa-chevron-down"></div>
+<meta property="og:title" content="Apple Watch App">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://watchaware.com/watch-apps/1213397019">
+<meta property="og:image" content="https://s3.amazonaws.com/itunes-images/app-assets/1213397019/24734720/1213397019-24734720-circularArtwork-300.jpg">
+<meta property="og:description" content="Controlling yours Keynote Slides using Apple Watch.">
+<meta property="og:site_name" content="watchaware">
+<meta name="author" content="WatchAware Staff Author">
+<link rel="canonical" href="https://watchaware.com/watch-apps/1213397019">
+
+<link rel="apple-touch-icon-precomposed" href="https://watchaware.com/assets/apple-touch-icon-152x152-f3a9f663825fb73895faeacc3f9e740d.png">
+<link rel="apple-touch-icon" href="https://watchaware.com/assets/apple-touch-icon-5fcd6be372d482353a5249afea3a248f.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://watchaware.com/assets/apple-touch-icon-76x76-0b42729d92926c05f14ce6e6434bd4d1.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://watchaware.com/assets/apple-touch-icon-120x120-235ff83afc9bb3766ec624dfe35a57cb.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://watchaware.com/assets/apple-touch-icon-152x152-f3a9f663825fb73895faeacc3f9e740d.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://watchaware.com/assets/apple-touch-icon-180x180-df101888fa8d68f2cf1deea6d06b472e.png">
+<link rel="icon" sizes="128x128" href="https://watchaware.com/assets/touch-icon-128x128-713eb3354dfc42d26165cf56b9bb69be.png">
+<link rel="icon" sizes="192x192" href="https://watchaware.com/assets/touch-icon-192x192-1fea1b4bc16393841fcafa7b45ab9089.png">
+<link rel="icon" type="image/png" href="https://watchaware.com/assets/favicon-32x32-3a6bfc72e411af202ce982ef888268b4.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://watchaware.com/assets/favicon-96x96-e60309acbf1bb1c6f3ba6e1e75d26a59.png" sizes="96x96">
+<link rel="icon" type="image/png" href="https://watchaware.com/assets/favicon-16x16-4ffb5d85bf39884a53c05fecffc27adf.png" sizes="16x16">
+<link rel="mask-icon" href="https://watchaware.com/assets/watchaware-icon-16x16-2411a116f1ad1aaebe7400fc5b163b37.svg" color="#ff7700">
+
+<link rel="alternate" type="application/rss+xml" title="WatchAware » Feed" href="https://watchaware.com/feed">
+<link href="./index_files/application-a3f6e59d0d4825086baf2ac22e9b88e5.css" media="all" rel="stylesheet">
+<meta content="authenticity_token" name="csrf-param">
+<meta content="/ixhKR0/DDHdS8M17I6dUJFq0RQcSbEoAZqh038UsQE=" name="csrf-token">
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "url": "https://www.watchaware.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://watchaware.com/watchaware_logo_768x467.png",
+      "width": 768,
+      "height": 467
+    }
+  }
+</script>
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org/",
+    "@type": "MobileApplication",
+    "url": "https://watchaware.com/watch-apps/1213397019",
+    "name": "WatchNotes",
+    "applicationCategory": "watch app",
+    "availableOnDevice": "Apple Watch",
+    "thumbnailUrl": "https://s3.amazonaws.com/itunes-images/app-assets/1213397019/24734720/1213397019-24734720-circularArtwork-300.jpg",
+    "screenshot": [
+     "https://s3.amazonaws.com/itunes-images/app-assets/1213397019/24734720/1213397019-24734720-screenshot-watch-1.jpg",
+     "https://s3.amazonaws.com/itunes-images/app-assets/1213397019/24734720/1213397019-24734720-screenshot-watch-2.jpg",
+     "https://s3.amazonaws.com/itunes-images/app-assets/1213397019/24734720/1213397019-24734720-screenshot-watch-3.jpg"
+    ],
+    "operatingSystem": "watchOS",
+    "softwareVersion": "1.0",
+    "author": {
+      "@type": "Organization",
+      "name": "Ezequiel Santos",
+      "url": "http://ezefranca.com/watchnotes"
+    },
+    "headline": "WatchNotes",
+    "description": "Controlling yours Keynote Slides using Apple Watch.",
+    "installUrl": "https://getapp.cc/app/1213397019"
+  }
+</script>
+
+<script>
+  /*! modernizr 3.3.1 (Custom Build) | MIT !*/
+  !function(e,n,t){function o(e){var n=x.className,t=Modernizr._config.classPrefix||"";if(S&&(n=n.baseVal),Modernizr._config.enableJSClass){var o=new RegExp("(^|\\s)"+t+"no-js(\\s|$)");n=n.replace(o,"$1"+t+"js$2")}Modernizr._config.enableClasses&&(n+=" "+t+e.join(" "+t),S?x.className.baseVal=n:x.className=n)}function r(e,n){return typeof e===n}function i(){var e,n,t,o,i,s,a;for(var f in _)if(_.hasOwnProperty(f)){if(e=[],n=_[f],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(t=0;t<n.options.aliases.length;t++)e.push(n.options.aliases[t].toLowerCase());for(o=r(n.fn,"function")?n.fn():n.fn,i=0;i<e.length;i++)s=e[i],a=s.split("."),1===a.length?Modernizr[a[0]]=o:(!Modernizr[a[0]]||Modernizr[a[0]]instanceof Boolean||(Modernizr[a[0]]=new Boolean(Modernizr[a[0]])),Modernizr[a[0]][a[1]]=o),y.push((o?"":"no-")+a.join("-"))}}function s(){return"function"!=typeof n.createElement?n.createElement(arguments[0]):S?n.createElementNS.call(n,"http://www.w3.org/2000/svg",arguments[0]):n.createElement.apply(n,arguments)}function a(e,n){if("object"==typeof e)for(var t in e)E(e,t)&&a(t,e[t]);else{e=e.toLowerCase();var r=e.split("."),i=Modernizr[r[0]];if(2==r.length&&(i=i[r[1]]),"undefined"!=typeof i)return Modernizr;n="function"==typeof n?n():n,1==r.length?Modernizr[r[0]]=n:(!Modernizr[r[0]]||Modernizr[r[0]]instanceof Boolean||(Modernizr[r[0]]=new Boolean(Modernizr[r[0]])),Modernizr[r[0]][r[1]]=n),o([(n&&0!=n?"":"no-")+r.join("-")]),Modernizr._trigger(e,n)}return Modernizr}function f(){var e=n.body;return e||(e=s(S?"svg":"body"),e.fake=!0),e}function u(e,t,o,r){var i,a,u,l,c="modernizr",d=s("div"),A=f();if(parseInt(o,10))for(;o--;)u=s("div"),u.id=r?r[o]:c+(o+1),d.appendChild(u);return i=s("style"),i.type="text/css",i.id="s"+c,(A.fake?A:d).appendChild(i),A.appendChild(d),i.styleSheet?i.styleSheet.cssText=e:i.appendChild(n.createTextNode(e)),d.id=c,A.fake&&(A.style.background="",A.style.overflow="hidden",l=x.style.overflow,x.style.overflow="hidden",x.appendChild(A)),a=t(d,e),A.fake?(A.parentNode.removeChild(A),x.style.overflow=l,x.offsetHeight):d.parentNode.removeChild(d),!!a}function l(e,n){return!!~(""+e).indexOf(n)}function c(e){return e.replace(/([a-z])-([a-z])/g,function(e,n,t){return n+t.toUpperCase()}).replace(/^-/,"")}function d(e,n){return function(){return e.apply(n,arguments)}}function A(e,n,t){var o;for(var i in e)if(e[i]in n)return t===!1?e[i]:(o=n[e[i]],r(o,"function")?d(o,t||n):o);return!1}function p(e){return e.replace(/([A-Z])/g,function(e,n){return"-"+n.toLowerCase()}).replace(/^ms-/,"-ms-")}function g(n,o){var r=n.length;if("CSS"in e&&"supports"in e.CSS){for(;r--;)if(e.CSS.supports(p(n[r]),o))return!0;return!1}if("CSSSupportsRule"in e){for(var i=[];r--;)i.push("("+p(n[r])+":"+o+")");return i=i.join(" or "),u("@supports ("+i+") { #modernizr { position: absolute; } }",function(e){return"absolute"==getComputedStyle(e,null).position})}return t}function m(e,n,o,i){function a(){u&&(delete z.style,delete z.modElem)}if(i=r(i,"undefined")?!1:i,!r(o,"undefined")){var f=g(e,o);if(!r(f,"undefined"))return f}for(var u,d,A,p,m,h=["modernizr","tspan","samp"];!z.style&&h.length;)u=!0,z.modElem=s(h.shift()),z.style=z.modElem.style;for(A=e.length,d=0;A>d;d++)if(p=e[d],m=z.style[p],l(p,"-")&&(p=c(p)),z.style[p]!==t){if(i||r(o,"undefined"))return a(),"pfx"==n?p:!0;try{z.style[p]=o}catch(v){}if(z.style[p]!=m)return a(),"pfx"==n?p:!0}return a(),!1}function h(e,n,t,o,i){var s=e.charAt(0).toUpperCase()+e.slice(1),a=(e+" "+B.join(s+" ")+s).split(" ");return r(n,"string")||r(n,"undefined")?m(a,n,o,i):(a=(e+" "+P.join(s+" ")+s).split(" "),A(a,n,t))}function v(e,n,o){return h(e,t,t,n,o)}var y=[],_=[],C={_version:"3.3.1",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var t=this;setTimeout(function(){n(t[e])},0)},addTest:function(e,n,t){_.push({name:e,fn:n,options:t})},addAsyncTest:function(e){_.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=C,Modernizr=new Modernizr;var w=C._config.usePrefixes?" -webkit- -moz- -o- -ms- ".split(" "):["",""];C._prefixes=w;var x=n.documentElement,S="svg"===x.nodeName.toLowerCase();Modernizr.addTest("canvas",function(){var e=s("canvas");return!(!e.getContext||!e.getContext("2d"))});var E;!function(){var e={}.hasOwnProperty;E=r(e,"undefined")||r(e.call,"undefined")?function(e,n){return n in e&&r(e.constructor.prototype[n],"undefined")}:function(n,t){return e.call(n,t)}}(),C._l={},C.on=function(e,n){this._l[e]||(this._l[e]=[]),this._l[e].push(n),Modernizr.hasOwnProperty(e)&&setTimeout(function(){Modernizr._trigger(e,Modernizr[e])},0)},C._trigger=function(e,n){if(this._l[e]){var t=this._l[e];setTimeout(function(){var e,o;for(e=0;e<t.length;e++)(o=t[e])(n)},0),delete this._l[e]}},Modernizr._q.push(function(){C.addTest=a}),Modernizr.addAsyncTest(function(){if(!Modernizr.canvas)return!1;var e=new Image,n=s("canvas"),t=n.getContext("2d");e.onload=function(){a("apng",function(){return"undefined"==typeof n.getContext?!1:(t.drawImage(e,0,0),0===t.getImageData(0,0,1,1).data[3])})},e.src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAACGFjVEwAAAABAAAAAcMq2TYAAAANSURBVAiZY2BgYPgPAAEEAQB9ssjfAAAAGmZjVEwAAAAAAAAAAQAAAAEAAAAAAAAAAAD6A+gBAbNU+2sAAAARZmRBVAAAAAEImWNgYGBgAAAABQAB6MzFdgAAAABJRU5ErkJggg=="});var b=C.testStyles=u;Modernizr.addTest("touchevents",function(){var t;if("ontouchstart"in e||e.DocumentTouch&&n instanceof DocumentTouch)t=!0;else{var o=["@media (",w.join("touch-enabled),("),"heartz",")","{#modernizr{top:9px;position:absolute}}"].join("");b(o,function(e){t=9===e.offsetTop})}return t});var T="Moz O ms Webkit",B=C._config.usePrefixes?T.split(" "):[];C._cssomPrefixes=B;var P=C._config.usePrefixes?T.toLowerCase().split(" "):[];C._domPrefixes=P;var j={elem:s("modernizr")};Modernizr._q.push(function(){delete j.elem});var z={style:j.elem.style};Modernizr._q.unshift(function(){delete z.style}),C.testAllProps=h,C.testAllProps=v,Modernizr.addTest("csstransitions",v("transition","all",!0)),i(),o(y),delete C.addTest,delete C.addAsyncTest;for(var N=0;N<Modernizr._q.length;N++)Modernizr._q[N]();e.Modernizr=Modernizr}(window,document);
+  !function(){function f(a){localStorage.setItem(b,a),h(a)}function g(a){document.documentElement.classList.remove(d[a])}function h(a){document.documentElement.classList.add(d[a])}var a=this,b="aa_font_size",c=localStorage.getItem(b),d={"10px":"aa_base--10","11px":"aa_base--11","12px":"aa_base--12","13px":"aa_base--13"},e={"14px":"10px","15px":"10px","16px":"10px","17px":"10px","19px":"11px","21px":"12px","23px":"13px","28px":"13px","33px":"13px","40px":"13px","47px":"13px","53px":"13px"};a.measureFontSize=function(){var a=document.createElement("span");a.innerHTML="Sample",a.className="aa_system-font",document.body.appendChild(a);var b=e[window.getComputedStyle(a,null).fontSize];b!=c&&(c&&g(c),f(b))},a.modifyBaseSize=function(a,e){if("number"==typeof a){c=localStorage.getItem(b);var h=parseInt(c.split("px")[0]);a>0?h+=1:a<0&&(h-=1);var i=h+"px";if(e){if(d[i])return!1;if(a>0)return"max";if(a<0)return"min"}else d[i]&&(g(c),f(i))}},a.checkSizePos=function(){var a=modifyBaseSize(1,!0),b=modifyBaseSize(-1,!0);return a||b||!1},c&&2==c.indexOf("px")?h(c):f("10px")}();
+  !function(){var a="nightMode";localStorage.getItem(a)&&document.documentElement.classList.add("dark")}();
+</script><link rel="stylesheet" href="./index_files/css" media="all">
+</head>
+<body ontouchstart="">
+
 <div id="splash">
 	<div id="left">
 		<h1>WatchNotes</h1>
@@ -255,25 +302,25 @@ h1, h2, h3, h4, h5, h6 {
 		<a href="https://itunes.apple.com/us/app/watchnotes/id1213397019?mt=8&amp;uo=4"><img class="appstore" src="./index_files/appstore.svg" alt="Download on the Apple App Store"></a>
 	</div>
 	<div id="right">
-		<div class="iphone">
-			<img src="./index_files/screen696x696.jpeg">
+		<div class="iphones">
+			<img src="./index_files/screen696x696.png">
 		</div>
 	</div>
 </div>
 
 <div id="icon-row">
 	<div id="icon-container">
-		<img src="./index_files/512x512bb.jpg">
+		<img src="./index_files/512x512bb.png">
 	</div>
 </div>
 
 <div id="screenshots">
 	
-		<img src="./index_files/screen696x696(1).jpeg">
+		<img src="./index_files/1.png">
 	
-		<img src="./index_files/screen696x696(2).jpeg">
+		<img src="./index_files/2.png">
 	
-		<img src="./index_files/screen696x696(3).jpeg">
+		<img src="./index_files/3.png">
 	
 </div>
 
@@ -289,28 +336,93 @@ Download WatchNotes macOS app server, connected using your iPhone and in your Ap
 	<a href="https://itunes.apple.com/us/app/watchnotes/id1213397019?mt=8&amp;uo=4"><img class="appstore" src="./index_files/appstore.svg" alt="Download on the Apple App Store"></a>
 </p>
 
-<p>
-	</p><div id="like-container"><div class="fb-like fb_iframe_widget" data-href="http://app-stop.appspot.com/id/1213397019" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=385205984962960&amp;container_width=0&amp;href=http%3A%2F%2Fapp-stop.appspot.com%2Fid%2F1213397019&amp;layout=button_count&amp;locale=en_US&amp;sdk=joey&amp;share=true&amp;show_faces=true"><span style="vertical-align: bottom; width: 106px; height: 20px;"><iframe name="f156403cfc5a0b" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like Facebook Social Plugin" src="./index_files/like.html" style="border: none; visibility: visible; width: 106px; height: 20px;" class=""></iframe></span></div></div>
-	<script>
-	// dynamically create a Facebook like button for the current URL:
-	var like = document.createElement("div");
-	like.className = "fb-like";
-	like.setAttribute("data-href", location.href);
-	like.setAttribute("data-layout", "button_count");
-	like.setAttribute("data-action", "like");
-	like.setAttribute("data-show-faces", "true");
-	like.setAttribute("data-share", "true");
-	document.getElementById("like-container").appendChild(like);
-	</script>
-<p></p>
+<div class="container-resp">
+	<div class="aa_text--36 aa_text--thin aa_text--center">Features</div>
+	<div class="watch-app-samples">
+	<div class="watch-app-samples__tape js-samples" style="transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
+	
+	<div class="watch-app-wrapper">
+	<div class="watch-app-wrapper__pad">
+	<div class="watch-app">
+	<div class="watch-app__watch">
+	<div class="watch-app__watch__band watch-app__watch__band--no-band"></div>
+	<div class="watch-app__watch__img">
+	<div class="watch-app__watch__img__screen">
+	<div class="watch-stage">
+	<div class="watch-stage__frame watch-application active js-sample" style="background-image: url(https://s3.amazonaws.com/itunes-images/app-assets/1213397019/24734720/1213397019-24734720-screenshot-watch-1.jpg)" data-video="" data-apng=""><video src="" width="136" height="170" preload="" autoplay="" loop="" muted="" webkit-playsinline=""></video></div>
+	</div>
+	</div>
+	</div>
+	</div>
+	<div class="watch-app__data aa_text--center">
+	<div class="watch-app__data__title"></div>
+	<div class="watch-app__data__info"></div>
+	</div>
+	</div>
+	</div>
+	</div>
+	
+	
+	<div class="watch-app-wrapper">
+	<div class="watch-app-wrapper__pad">
+	<div class="watch-app">
+	<div class="watch-app__watch">
+	<div class="watch-app__watch__band watch-app__watch__band--no-band"></div>
+	<div class="watch-app__watch__img">
+	<div class="watch-app__watch__img__screen">
+	<div class="watch-stage">
+	<div class="watch-stage__frame watch-application active js-sample" style="background-image: url(./index_files/1213397019-24734720-screenshot-watch-2.jpg)" data-video="" data-apng=""><video src="" width="136" height="170" preload="" autoplay="" loop="" muted="" webkit-playsinline=""></video></div>
+	</div>
+	</div>
+	</div>
+	</div>
+	<div class="watch-app__data aa_text--center">
+	<div class="watch-app__data__title"></div>
+	<div class="watch-app__data__info"></div>
+	</div>
+	</div>
+	</div>
+	</div>
+	
+	
+	<div class="watch-app-wrapper">
+	<div class="watch-app-wrapper__pad">
+	<div class="watch-app">
+	<div class="watch-app__watch">
+	<div class="watch-app__watch__band watch-app__watch__band--no-band"></div>
+	<div class="watch-app__watch__img">
+	<div class="watch-app__watch__img__screen">
+	<div class="watch-stage">
+	<div class="watch-stage__frame watch-application active js-sample" style="background-image: url(./index_files//1213397019-24734720-screenshot-watch-3.jpg)" data-video="" data-apng=""><video src="" width="136" height="170" preload="" autoplay="" loop="" muted="" webkit-playsinline=""></video></div>
+	</div>
+	</div>
+	</div>
+	</div>
+	<div class="watch-app__data aa_text--center">
+	<div class="watch-app__data__title"></div>
+	<div class="watch-app__data__info"></div>
+	</div>
+	</div>
+	</div>
+	</div>
+	
+	</div>
+	<button class="watch-app-samples__nav watch-app-samples__nav--prev js-prev disable"><i class="aai-chevron-left"></i></button>
+	<button class="watch-app-samples__nav watch-app-samples__nav--next js-next disable"><i class="aai-chevron-right"></i></button>
+	</div>
+	</div>
+	</section>
+<footer><p id="copyright">© Ezequiel Santos </p></footer>
 
-<p id="copyright">© Ezequiel Santos </p>
-
-<p id="attribution">
-Landing page created automatically with <a href="http://app-stop.appspot.com/">AppStop</a></p>
 
 
 </div>
 
 
 </body></html>
+
+
+
+
+<!-- 
+<div id="js-nav-helper" class="am-helper"></div> -->
