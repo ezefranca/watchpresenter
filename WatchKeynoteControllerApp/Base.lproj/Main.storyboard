@@ -21,12 +21,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="B6G-yW-9W6">
-                                <rect key="frame" x="0.0" y="30" width="414" height="706"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="qJy-5j-vmb">
+                                <rect key="frame" x="10" y="20" width="394" height="716"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="btO-au-cwI">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="93.666666666666671"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="80"/>
                                         <color key="backgroundColor" red="0.86666666670000003" green="0.87058823529999996" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="t5g-Ie-hS5"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                         <state key="normal" title="Connect">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -35,35 +38,40 @@
                                             <action selector="toggleConnectionButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c4s-M8-821"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdm-iW-gNN">
-                                        <rect key="frame" x="0.0" y="101.66666666666666" width="414" height="283.33333333333337"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" image="previous">
-                                            <color key="titleColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="backButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wRG-GV-2LY"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OK1-KW-bHn">
-                                        <rect key="frame" x="0.0" y="393" width="414" height="313"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" image="next">
-                                            <color key="titleColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="nextButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bT1-Dc-F1E"/>
-                                        </connections>
-                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="B6G-yW-9W6">
+                                        <rect key="frame" x="0.0" y="80" width="394" height="636"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdm-iW-gNN">
+                                                <rect key="frame" x="0.0" y="0.0" width="394" height="305.66666666666669"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" image="previous">
+                                                    <color key="titleColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="backButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wRG-GV-2LY"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OK1-KW-bHn">
+                                                <rect key="frame" x="0.0" y="313.66666666666674" width="394" height="322.33333333333326"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" image="next">
+                                                    <color key="titleColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="nextButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bT1-Dc-F1E"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="B6G-yW-9W6" secondAttribute="trailing" id="Lbl-fj-svz"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="B6G-yW-9W6" secondAttribute="bottom" id="WWF-5M-oUu"/>
-                            <constraint firstItem="B6G-yW-9W6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="lvP-Q7-vnz"/>
-                            <constraint firstItem="B6G-yW-9W6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="nV2-i4-otX"/>
+                            <constraint firstItem="qJy-5j-vmb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="FbO-Ix-Z5N"/>
+                            <constraint firstAttribute="trailing" secondItem="qJy-5j-vmb" secondAttribute="trailing" constant="10" id="O6c-AJ-Jm1"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qJy-5j-vmb" secondAttribute="bottom" id="v9f-QL-wAp"/>
+                            <constraint firstItem="qJy-5j-vmb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="wRh-Gq-owY"/>
                         </constraints>
                     </view>
                     <connections>
